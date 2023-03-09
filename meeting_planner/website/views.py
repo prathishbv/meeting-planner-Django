@@ -3,4 +3,4 @@ from django.http import HttpResponse
 from datetime import datetime
 
 def welcome(request):
-    return HttpResponse("Welcome to the page")
+    return render(request, 'website/home.html')
